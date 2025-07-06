@@ -1,0 +1,18 @@
+Intuition:
+
+You have n identical objects and need to distribute them into k boxes:
+So you have n starts **** and k-1 bars ||
+
+so in total you have n+k-1 symbols  ****||  and need k-1 of them to be bars
+
+So you find how many ways to choose k-1 from n+k-1   (n+k-1) C (k-1) 
+
+
+Use cases:
+
+x1+x2+x3+x4+...+xk = S   all xi >= 0
+
+So you have S stars and you distribute into k boxes (the xi's) -> So answer = (S+k-1) C (k-1)
+
+If some xi needs to have at least 'p' so some has a condition xi >= p, then give it at least p from you S stars so its guaranteed to always have at least p, but then you only will have S - p stars left to distribute.
+
